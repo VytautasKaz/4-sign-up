@@ -9,16 +9,34 @@ main {
 }
 .left-side {
     display: inline-block;
+    color: white;
     float: left;
     width: 40%;
-    background-color: aqua;
+    background-color: #461D9F;
     padding: 40px;
     margin-top: 20px;
+    height: 430px;
 }
-    h1 {}
-    footer {}
-    footer > a {}
-    footer > span{}
+    h1 {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+    footer {
+        display: inline-block;
+        width: 100%;
+        margin-top: 310px;
+        font-size: 15px;
+        text-align: center;
+    }
+    footer > a {
+        display: inline-block;
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: #6845BE;
+    }
 .right-side {
     display: inline-block;
     float: left;
@@ -26,11 +44,59 @@ main {
     background-color: #ffffff;
     padding: 60px;
 }
-    .close {}
-    .form {}
-        .form-row {}
-            label {}
-            input {}
-            .btn {}
-            .form-row > span {}
-            .form-row > a {}
+    .close {
+        display: inline-block;
+        float: right;
+        margin: -48px;
+        margin-top: -55px;
+        color: lightgray;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .form {
+        display: inline-block;
+        float: left;
+    }
+            .form-row > label {
+                display: inline-block;
+                width: 100%;
+                font-size: 12px;
+                color: #D4D4D4;
+                margin-bottom: 10px;
+                margin-top: 24px;
+                text-transform: uppercase;
+            }
+            .form-row > input {
+                display: inline-block;
+                width: 130%;
+                border-color: transparent;
+                border-bottom-color: #D4D4D4;
+            }
+            .btn {
+                display: inline-block;
+                margin-top: 40px;
+                border-style: solid;
+                background-color: #1D4DD5;
+                color: white;
+                padding: 7px;
+                border-radius: 30px;
+                text-align: center;
+                width: 80%;
+                float: left;
+                cursor: pointer;
+                text-transform: capitalize;
+            }
+            .form-row > span {
+                display: inline-block;
+                margin-top: 50px;
+                margin-left: 24px;
+                position: absolute;
+            }
+            .form-row > a {
+                display: inline-block;
+                margin-top: 50px;
+                margin-left: 45px;
+                position: absolute;
+                text-decoration: none;
+                color: #1D4DD5;
+            }
