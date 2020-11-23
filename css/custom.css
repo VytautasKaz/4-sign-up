@@ -1,0 +1,36 @@
+body {
+    background-color: burlywood;
+}
+main {
+    display: inline-block;
+    width: 800px;
+    margin-top: 100px;
+    margin-left: calc(50% - 400px);
+}
+.left-side {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    background-color: aqua;
+    padding: 40px;
+    margin-top: 20px;
+}
+    h1 {}
+    footer {}
+    footer > a {}
+    footer > span{}
+.right-side {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 60px;
+}
+    .close {}
+    .form {}
+        .form-row {}
+            label {}
+            input {}
+            .btn {}
+            .form-row > span {}
+            .form-row > a {}
