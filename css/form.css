@@ -1,0 +1,43 @@
+.form {
+    display: inline-block;
+    width: 100%;
+}
+    .form-row {
+        display: inline-block;
+        width: 100%;
+}
+    .form-row + .form-row {
+        margin-top: 40px;
+    }
+        .form-row > label {
+            display: inline-block;
+            width: 100%;
+            font-size: 13px;
+            color: #D4D4D4;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .form-row > input {
+            display: inline-block;
+            width: 90%;
+            border-color: transparent;
+            border-bottom-color: #D4D4D4;
+            font-size: 18px;
+        }
+        .form-row > span {
+            display: inline-block;
+            float: left;
+            padding: 10px;
+            line-height: 20px;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .form-row > a {
+            display: inline-block;
+            float: left;
+            padding: 10px;
+            line-height: 20px;
+            font-size: 15px;
+            color: #1D4DD5;
+            text-decoration: none;
+        }
