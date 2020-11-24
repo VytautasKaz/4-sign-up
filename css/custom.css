@@ -1,12 +1,23 @@
 body {
-    background-color: burlywood;
+    background-color: #6845BE;
+}
+.background {
+    display: inline-block;
+    background-image: url(../img/kalnas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(24px);
+    width: 100%;
+    height: 100vh;
 }
 main {
     display: inline-block;
     width: 800px;
-    margin-top: 100px;
-    margin-left: calc(50% - 400px);
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 .left-side {
     display: inline-block;
@@ -63,8 +74,10 @@ main {
         color: lightgray;
         font-size: 40px;
         cursor: pointer;
+        transform-origin: center;
         transform: rotate(45deg);
         font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
     }
     .form {
         display: inline-block;
