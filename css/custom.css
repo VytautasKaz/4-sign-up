@@ -6,6 +6,7 @@ main {
     width: 800px;
     margin-top: 100px;
     margin-left: calc(50% - 400px);
+    position: relative;
 }
 .left-side {
     display: inline-block;
@@ -14,8 +15,13 @@ main {
     width: 40%;
     background-color: #461D9F;
     padding: 40px;
-    margin-top: 20px;
-    height: 429px;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    background-image: url(../img/kalnas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
     h1 {
         display: inline-block;
@@ -25,78 +31,95 @@ main {
         text-transform: capitalize;
     }
     footer {
-        display: inline-block;
-        width: 100%;
-        margin-top: 310px;
+        position: absolute;
+        bottom: 20px;
         font-size: 15px;
-        text-align: center;
     }
     footer > a {
         display: inline-block;
+        font-size: 15px;
         color: white;
         text-decoration: underline;
         text-decoration-color: #6845BE;
     }
 .right-side {
     display: inline-block;
-    float: left;
+    float: right;
     width: 60%;
     background-color: #ffffff;
     padding: 60px;
+    position: relative;
 }
     .close {
         display: inline-block;
-        float: right;
-        margin: -48px;
-        margin-top: -55px;
+        text-align: center;
+        line-height: 55px;
+        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
         color: lightgray;
-        font-size: 20px;
+        font-size: 40px;
         cursor: pointer;
+        transform: rotate(45deg);
+        font-weight: 100;
     }
     .form {
         display: inline-block;
-        float: left;
+        width: 100%;
     }
+        .form-row {
+            display: inline-block;
+            width: 100%;
+    }
+        .form-row + .form-row {
+            margin-top: 40px;
+        }
             .form-row > label {
                 display: inline-block;
                 width: 100%;
-                font-size: 12px;
+                font-size: 13px;
                 color: #D4D4D4;
                 margin-bottom: 10px;
-                margin-top: 24px;
                 text-transform: uppercase;
             }
             .form-row > input {
                 display: inline-block;
-                width: 130%;
+                width: 90%;
                 border-color: transparent;
                 border-bottom-color: #D4D4D4;
+                font-size: 18px;
             }
             .btn {
                 display: inline-block;
-                margin-top: 40px;
                 border-style: solid;
                 background-color: #1D4DD5;
                 color: white;
-                padding: 7px;
-                border-radius: 30px;
+                padding: 7px 40px;
+                border-radius: 20px;
+                line-height: 20px;
+                font-size: 15px;
                 text-align: center;
-                width: 80%;
                 float: left;
                 cursor: pointer;
                 text-transform: capitalize;
             }
             .form-row > span {
                 display: inline-block;
-                margin-top: 50px;
-                margin-left: 24px;
-                position: absolute;
+                float: left;
+                padding: 10px;
+                line-height: 20px;
+                font-size: 15px;
+                margin-left: 10px;
             }
             .form-row > a {
                 display: inline-block;
-                margin-top: 50px;
-                margin-left: 45px;
-                position: absolute;
-                text-decoration: none;
+                float: left;
+                padding: 10px;
+                line-height: 20px;
+                font-size: 15px;
                 color: #1D4DD5;
+                text-decoration: none;
             }
